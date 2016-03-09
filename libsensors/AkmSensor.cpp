@@ -27,7 +27,10 @@
 #include "ak8973b.h"
 
 #include <cutils/log.h>
-#include "AkmSensor.h"*****************************/
+#include "AkmSensor.h"
+
+#define DEBUG 1
+//#define ALOG_NDEBUG 0
 
 int (*akm_is_sensor_enabled)(uint32_t sensor_type);
 int (*akm_enable_sensor)(uint32_t sensor_type);
