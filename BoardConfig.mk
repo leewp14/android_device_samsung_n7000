@@ -41,7 +41,15 @@ TARGET_OTA_ASSERT_DEVICE := galaxynote,n7000,N7000,GT-N7000
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 DEVICE_RESOLUTION := 800x1280
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
+RECOVERY_GRAPHICS_FORCE_USE_LINELENGTH := true
 TW_HAS_NO_RECOVERY_PARTITION := true
+HAVE_SELINUX := true
+TW_MAX_BRIGHTNESS := 255
+TW_INCLUDE_CRYPTO := true
+TW_HAS_DOWNLOAD_MODE := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/platform/s5p-tmu/temperature"
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/n7000/BoardConfigVendor.mk
