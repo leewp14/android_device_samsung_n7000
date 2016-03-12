@@ -39,8 +39,7 @@ __BEGIN_DECLS
 #define ID_L  (3)
 #define ID_P  (4)
 #define ID_GY (5)
-#define ID_SM (6)
-#define ID_PR (7)
+#define ID_PR (6)
 
 /*****************************************************************************/
 

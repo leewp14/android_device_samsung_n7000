@@ -37,10 +37,9 @@ public:
     virtual ~AkmSensor();
 
     enum {
-        Accelerometer     = 0,
-        MagneticField     = 1,
-        Orientation       = 2,
-        SignificantMotion = 3,
+        Accelerometer   = 0,
+        MagneticField   = 1,
+        Orientation     = 2,
         numSensors
     };
 
@@ -50,8 +49,6 @@ public:
     void processEvent(int code, int value);
 
 private:
-    int mAccRefCount;
-    int mMotionValue;
     int loadAKMLibrary();
     int update_delay();
     void *mLibAKM;
