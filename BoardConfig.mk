@@ -24,6 +24,9 @@
 
 TARGET_BOARD_INFO_FILE := device/samsung/n7000/board-info.txt
 
+# CM overlay to  frameworks/opt/hardware/src/
+BOARD_HARDWARE_CLASS += device/samsung/n7000/cmhw
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/n7000/bluetooth
 
