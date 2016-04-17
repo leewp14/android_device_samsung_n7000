@@ -31,8 +31,8 @@ BOARD_HARDWARE_CLASS += device/samsung/n7000/cmhw
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/n7000/bluetooth
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/samsung/tw_n7000
-# TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
+# TARGET_KERNEL_SOURCE := kernel/samsung/tw_n7000
+TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 # TARGET_KERNEL_SOURCE := kernel/samsung/twexp
 
 
