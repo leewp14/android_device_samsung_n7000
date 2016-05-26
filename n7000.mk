@@ -37,8 +37,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Netmgr dependency on libstlport
 PRODUCT_PACKAGES += \
-	libstlport \
-    OTAUpdates
+	libstlport
+
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.exynos4
