@@ -77,4 +77,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/twrp.fstab:recovery/root/etc/twrp.fstab
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    persist.service.adb.enable=1
+
 $(call inherit-product-if-exists, vendor/samsung/n7000/n7000-vendor.mk)
