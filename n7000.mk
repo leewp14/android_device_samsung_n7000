@@ -78,6 +78,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/twrp.fstab:recovery/root/etc/twrp.fstab
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0 \
     ro.adb.secure=0 \
     persist.service.adb.enable=1
 
