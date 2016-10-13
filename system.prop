@@ -2,7 +2,7 @@
 # system.prop for n7000
 #
 
-rild.libpath=/system/lib/ril-wrapper.so
+rild.libpath=/system/lib/libsecril-shim.so
 rild.libargs=-d /dev/ttyS0
 
 # Primary storage is physical
