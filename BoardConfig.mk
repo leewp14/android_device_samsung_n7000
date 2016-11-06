@@ -19,9 +19,6 @@
 
 -include device/samsung/galaxys2-common/BoardCommonConfig.mk
 
-# Use old kernel toolchain. 
-# TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
-
 TARGET_BOARD_INFO_FILE := device/samsung/n7000/board-info.txt
 
 # CM overlay to  frameworks/opt/hardware/src/
@@ -35,8 +32,8 @@ TARGET_KERNEL_SOURCE := kernel/samsung/tw_n7000
 # TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
 # TARGET_KERNEL_SOURCE := kernel/samsung/twexp
 
-
 TARGET_KERNEL_CONFIG := cyanogenmod_n7000_defconfig
+
 # assert
 TARGET_OTA_ASSERT_DEVICE := galaxynote,n7000,N7000,GT-N7000
 
