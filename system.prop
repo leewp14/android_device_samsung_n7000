@@ -8,6 +8,9 @@ rild.libargs=-d /dev/ttyS0
 # Primary storage is physical
 ro.vold.primary_physical=1
 
+# disable atlas service
+config.disable_atlas=true
+
 # Dalvik
 persist.sys.dalvik.multithread=true
 # cache partition is to small for dalvik-cache
