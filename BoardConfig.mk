@@ -32,7 +32,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/tw_n7000
 # TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
 # TARGET_KERNEL_SOURCE := kernel/samsung/twexp
 
-TARGET_KERNEL_CONFIG := cyanogenmod_n7000_defconfig
+TARGET_KERNEL_CONFIG := lineageos_n7000_defconfig
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := galaxynote,n7000,N7000,GT-N7000
