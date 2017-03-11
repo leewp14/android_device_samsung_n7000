@@ -64,4 +64,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.gps.rc:root/init.gps.rc \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml
 
+# TWRP
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ramdisk/twrp.fstab:recovery/root/etc/twrp.fstab \
+	$(LOCAL_PATH)/ramdisk/twrp.fstab:root/etc/twrp.fstab
+
 $(call inherit-product-if-exists, vendor/samsung/n7000/n7000-vendor.mk)
