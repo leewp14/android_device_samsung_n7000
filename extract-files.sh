@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2012-2016, The CyanogenMod Project
+# Copyright (C) 2017, The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -32,8 +33,10 @@ for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do
     adb pull /$FILE $DEVICEBASE/$FILE
 done
 
+
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__VENDOR__/$VENDOR/g > $DEVICEMAKEFILE
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2012-2016, The CyanogenMod Project
+# Copyright (C) 2017, The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -62,7 +65,8 @@ done
 
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__VENDOR__/$VENDOR/g > ../../../$DEVICEOUTDIR/BoardConfigVendor.mk
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2012-2016, The CyanogenMod Project
+# Copyright (C) 2017, The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -81,7 +85,8 @@ BOARD_USES_GENERIC_AUDIO := false
 EOF
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__VENDOR__/$VENDOR/g > ../../../$DEVICEOUTDIR/$DEVICE-vendor.mk
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2012-2016, The CyanogenMod Project
+# Copyright (C) 2017, The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -102,3 +107,4 @@ DEVICE_PACKAGE_OVERLAYS += vendor/__VENDOR__/__DEVICE__/overlay
 EOF
 
 ./../../../device/samsung/galaxys2-common/extract-files.sh
+
