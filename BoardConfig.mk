@@ -38,7 +38,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/tw_n7000
 
 TARGET_KERNEL_CONFIG := cyanogenmod_n7000_defconfig
 # assert
-TARGET_OTA_ASSERT_DEVICE := galaxynote,n7000,N7000,GT-N7000
+TARGET_OTA_ASSERT_DEVICE := galaxynote,n7000,N7000,GT-N7000,GT-I9220,I9220,i9220
 
 # We have a high res screen, use big font in recovery
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
