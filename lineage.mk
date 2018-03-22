@@ -17,7 +17,7 @@
 # Release name
 PRODUCT_RELEASE_NAME := GT-N7000
 
-# Inherit some common CM stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
