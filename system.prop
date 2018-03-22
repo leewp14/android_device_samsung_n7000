@@ -10,6 +10,9 @@ ro.ril.telephony.nstrings=4
 # Primary storage is physical
 ro.vold.primary_physical=1
 
+# EGL blobs crash on screen off
+ro.egl.destroy_after_detach=true
+
 # disable atlas service
 config.disable_atlas=true
 

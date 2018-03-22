@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
+# Include common makefile
+$(call inherit-product, device/samsung/galaxys2-common/common.mk)
+
 LOCAL_PATH := device/samsung/n7000
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
-# Include common makefile
-$(call inherit-product, device/samsung/galaxys2-common/common.mk)
 
 # This device is xhdpi.
 PRODUCT_AAPT_CONFIG := normal
@@ -32,12 +32,10 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320 \
-	net.tethering.noprovisioning=true
+    ro.sf.lcd_density=320
 
-# Netmgr dependency on libstlport
-PRODUCT_PACKAGES += \
-	libstlport
+# Proprietary blobs dependency on libstlport
+PRODUCT_PACKAGES +=  libstlport
 
 # Sensors
 PRODUCT_PACKAGES += \
