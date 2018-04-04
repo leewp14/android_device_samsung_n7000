@@ -17,10 +17,8 @@ ro.egl.destroy_after_detach=true
 config.disable_atlas=true
 
 # Dalvik
-persist.sys.dalvik.multithread=true
 # cache partition is to small for dalvik-cache
 dalvik.vm.dexopt-data-only=1
-dalvik.vm.dex2oat-Xmx=256m
 
 # OTA updates
 ro.ota.romname=NightOwl-N7000
