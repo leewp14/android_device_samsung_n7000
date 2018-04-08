@@ -20,6 +20,14 @@ config.disable_atlas=true
 # cache partition is to small for dalvik-cache
 dalvik.vm.dexopt-data-only=1
 
+# ActivityManager
+ro.vendor.qti.sys.fw.bg_apps_limit=2
+ro.vendor.qti.sys.fw.use_trim_settings=true
+ro.vendor.qti.sys.fw.empty_app_percent=50
+ro.vendor.qti.sys.fw.trim_empty_percent=100
+ro.vendor.qti.sys.fw.trim_cache_percent=100
+ro.vendor.qti.sys.fw.trim_enable_memory=1073741824
+
 # OTA updates
 ro.ota.romname=NightOwl-N7000
 ro.ota.manifest=https://drive.google.com/uc?export=download&id=1UyrtiLs6H0glczojMGBQMzQTCBDXQlid
