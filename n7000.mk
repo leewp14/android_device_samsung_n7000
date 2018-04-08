@@ -79,6 +79,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/twrp.fstab:recovery/root/etc/twrp.fstab
 
+# FM Radio (Si4709)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/modules/Si4709_driver.ko:system/lib/modules/Si4709_driver.ko
+
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.secure=0 \
     ro.adb.secure=0 \
