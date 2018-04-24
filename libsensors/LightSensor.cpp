@@ -23,13 +23,11 @@
 #include <sys/select.h>
 #include <cstring>
 
-//#include <linux/lightsensor.h>
-
 #include <cutils/log.h>
 
 #include "LightSensor.h"
 
-// #define LOG_NDEBUG 0
+// #define ALOG_NDEBUG 0
 
 /*****************************************************************************/
 

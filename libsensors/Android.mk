@@ -26,9 +26,8 @@ LOCAL_MODULE := sensors.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_RELATIVE_PATH := hw
 
 LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true 
-
-LOCAL_CFLAGS := -DLOG_TAG=\"Sensors\"
+LOCAL_VENDOR_MODULE := true
+LOCAL_CFLAGS := -DALOG_TAG=\"Sensors\"
 LOCAL_SRC_FILES := 						\
 				sensors.cpp 			\
 				SensorBase.cpp			\

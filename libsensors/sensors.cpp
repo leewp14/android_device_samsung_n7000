@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "Sensors"
+#define ALOG_TAG "Sensors"
 
 #include <hardware/sensors.h>
 #include <fcntl.h>
@@ -75,7 +75,7 @@ static const struct sensor_t sSensorList[] = {
           "STMicroelectronics",
           1, SENSORS_ACCELERATION_HANDLE,
           SENSOR_TYPE_ACCELEROMETER, RANGE_A, CONVERT_A, 0.23f, 20000, 0, 0,
-          "", "", 0, 0, {0, 0}},
+          "", "", 0, 0, {0, 0},},
         { "AK8975 3-axis Magnetic field sensor",
           "Asahi Kasei Microdevices",
           1, SENSORS_MAGNETIC_FIELD_HANDLE,
@@ -90,22 +90,22 @@ static const struct sensor_t sSensorList[] = {
           "Sharp",
           1, SENSORS_LIGHT_HANDLE,
           SENSOR_TYPE_LIGHT, 10240.0f, 1.0f, 0.75f, 0, 0, 0,
-          "", "", 0, 0, {0, 0}},
+          "", "", 0, 0, {0, 0},},
         { "GP2A Proximity sensor",
           "Sharp",
           1, SENSORS_PROXIMITY_HANDLE,
           SENSOR_TYPE_PROXIMITY, 5.0f, 5.0f, 0.75f, 0, 0, 0,
-          "", "", 0, SENSOR_FLAG_WAKE_UP | SENSOR_FLAG_ON_CHANGE_MODE, {0, 0}},
+          "", "", 0, SENSOR_FLAG_WAKE_UP | SENSOR_FLAG_ON_CHANGE_MODE, {0, 0},},
         { "K3G Gyroscope sensor",
           "STMicroelectronics",
           1, SENSORS_GYROSCOPE_HANDLE,
           SENSOR_TYPE_GYROSCOPE, RANGE_GYRO, CONVERT_GYRO, 6.1f, 1190, 0, 0,
-          "", "", 0, 0, {0, 0}},
+          "", "", 0, 0, {0, 0},},
         { "BMP180 Pressure sensor",
           "Bosch",
           1, SENSORS_PRESSURE_HANDLE,
           SENSOR_TYPE_PRESSURE, 1100.0f, 0.01f, 0.67f, 20000, 0, 0,
-          "", "", 0, 0, {0, 0}},
+          "", "", 0, 0, {0, 0},},
         { "Significant motion sensor (Accelerometer)",
           "STMicroelectronics",
           1, SENSORS_SIGNIFICANT_MOTION_HANDLE,
@@ -333,7 +333,7 @@ static int device__activate(sensors_poll_device_t *dev,
     return ctx->activate(handle, enabled);
 }
 
-static int device__setDelay(sensors_poll_device_t *dev, 
+static int device__setDelay(sensors_poll_device_t *dev,
         int handle, int64_t ns) {
     sensors_poll_context_t *ctx = (sensors_poll_context_t *)dev;
     return ctx->setDelay(handle, ns);
