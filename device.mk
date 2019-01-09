@@ -42,10 +42,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     sensors.exynos4
 
-# OTA Update
-PRODUCT_PACKAGES += \
-    OTAUpdates
-
 # Snap Camera
 # PRODUCT_PACKAGES += \
 #    Snap
