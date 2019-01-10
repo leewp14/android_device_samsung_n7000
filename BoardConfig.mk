@@ -34,6 +34,9 @@ TARGET_KERNEL_CONFIG := lineageos_n7000_defconfig
 # assert
 TARGET_OTA_ASSERT_DEVICE := galaxynote,n7000,N7000,GT-N7000
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += DBATTERY_REAL_INFO
+
 # TWRP
 TW_THEME := portrait_hdpi
 TWRP_NEW_THEME := true
