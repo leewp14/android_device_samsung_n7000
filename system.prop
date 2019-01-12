@@ -13,11 +13,8 @@ ro.vold.primary_physical=1
 # EGL blobs crash on screen off
 ro.egl.destroy_after_detach=true
 
-# disable atlas service
-config.disable_atlas=true
-
 # Dalvik
-# cache partition is to small for dalvik-cache
+# cache partition is too small for dalvik-cache
 dalvik.vm.dexopt-data-only=1
 
 # TEST
