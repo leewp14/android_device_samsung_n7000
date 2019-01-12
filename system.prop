@@ -20,3 +20,6 @@ config.disable_atlas=true
 # cache partition is to small for dalvik-cache
 dalvik.vm.dexopt-data-only=1
 
+# TEST
+ro.lineage.version=15.1
+
