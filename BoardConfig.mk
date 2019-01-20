@@ -26,8 +26,8 @@ TARGET_BOARD_INFO_FILE := device/samsung/n7000/board-info.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/n7000/bluetooth
 
 # Inline kernel building
-# TARGET_KERNEL_SOURCE := kernel/samsung/tw_n7000
-TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
+TARGET_KERNEL_SOURCE := kernel/samsung/tw_n7000
+# TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 
 TARGET_KERNEL_CONFIG := lineageos_n7000_defconfig
 
