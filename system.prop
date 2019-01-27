@@ -13,13 +13,4 @@ ro.vold.primary_physical=1
 # EGL blobs crash on screen off
 ro.egl.destroy_after_detach=true
 
-# disable atlas service
-config.disable_atlas=true
 
-# Dalvik
-# cache partition is to small for dalvik-cache
-dalvik.vm.dexopt-data-only=1
-
-# OTA updates
-ro.ota.romname=NightOwl-N7000
-ro.ota.manifest=https://drive.google.com/uc?export=download&id=1UyrtiLs6H0glczojMGBQMzQTCBDXQlid
