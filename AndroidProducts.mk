@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_n7000.mk
+    $(LOCAL_DIR)/lineage_n7000.mk
