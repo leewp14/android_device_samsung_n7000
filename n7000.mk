@@ -64,9 +64,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.gps.rc:root/init.gps.rc \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml
 
-PRODUCT_PACKAGES += \
-	gps.exynos4
-
 # TWRP
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/twrp.fstab:recovery/root/etc/twrp.fstab
