@@ -3,7 +3,7 @@ system/bin/gpsd
 system/lib/libakm.so
 system/lib/libsec-ril.so 
 system/lib/libsecril-client.so 
-system/lib/hw/gps.exynos4.vendor.so
+system/lib/hw/gps.exynos4.so
 system/etc/wifi/bcmdhd_apsta.bin
 system/etc/wifi/bcmdhd_mfg.bin
 system/etc/wifi/bcmdhd_p2p.bin
