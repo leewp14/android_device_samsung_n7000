@@ -60,12 +60,12 @@ PRODUCT_COPY_FILES += \
 
 # Gps
 PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/bin/gps_daemon.sh:system/bin/gps_daemon.sh \
     $(LOCAL_PATH)/init.gps.rc:root/init.gps.rc \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml
 
 PRODUCT_PACKAGES += \
-	gps.exynos4 \
-	libdmitry
+	gps.exynos4
 
 # TWRP
 PRODUCT_COPY_FILES += \

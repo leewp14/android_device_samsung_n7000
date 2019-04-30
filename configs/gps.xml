@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<glgps xmlns="http://www.glpals.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.glpals.com/ glconfig.xsd" >
+<glgps xmlns="http://www.glpals.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.glpals.com/glconfig.xsd" >
   <!--HAL Confguration  -->
   <hal
        acPortName="/dev/ttySAC1"
@@ -8,6 +8,8 @@
        gpioNResetPath="/sys/class/sec/gps/GPS_nRST/value"
        gpioDelayMs="250"
        acNvStoDir="/data/gps/"
+       acNmeaOutName="/data/gps/nmea_out"
+       ctrlPipe="/data/gps/glgpsctrl"
 
        acLogDirectory="/sdcard/gps/broadcom/"
 
@@ -25,11 +27,6 @@
        SuplUT2Seconds="20"
        SuplUT3Seconds="20"
        SuplVersion="1"
-
-       LbsTAC="10101222"
-       ctrlPipe="/data/gps/glgpsctrl"
-       LbsWlanEnable="false"
-       SensorsEnable="false"
 
        LbsSyncLto="false"
        SyncLto="true"
