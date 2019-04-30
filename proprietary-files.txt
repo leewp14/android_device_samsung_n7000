@@ -1,9 +1,9 @@
 system/bin/gps.cer
 system/bin/gpsd
-vendor/lib/libakm.so
-vendor/lib/libsec-ril.so 
-vendor/lib/libsecril-client.so 
-vendor/lib/hw/gps.exynos4.vendor.so
+system/lib/libakm.so
+system/lib/libsec-ril.so 
+system/lib/libsecril-client.so 
+system/lib/hw/gps.exynos4.vendor.so
 system/etc/wifi/bcmdhd_apsta.bin
 system/etc/wifi/bcmdhd_mfg.bin
 system/etc/wifi/bcmdhd_p2p.bin
