@@ -61,7 +61,6 @@ PRODUCT_COPY_FILES += \
 
 # Gps
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/bin/gps_daemon.sh:system/bin/gps_daemon.sh \
     $(LOCAL_PATH)/init.gps.rc:root/init.gps.rc \
     $(LOCAL_PATH)/configs/gps.xml:system/etc/gps.xml
 
