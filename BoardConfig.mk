@@ -21,32 +21,15 @@
 
 TARGET_BOARD_INFO_FILE := device/samsung/n7000/board-info.txt
 
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/n7000/bluetooth
 
 # Inline kernel building
-# TARGET_KERNEL_SOURCE := kernel/samsung/tw_n7000
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
-
 TARGET_KERNEL_CONFIG := lineageos_n7000_defconfig
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := galaxynote,n7000,N7000,GT-N7000
-
-# We have a high res screen, use big font in recovery
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
-DEVICE_RESOLUTION := 800x1280
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-RECOVERY_GRAPHICS_FORCE_USE_LINELENGTH := true
-TW_HAS_NO_RECOVERY_PARTITION := true
-HAVE_SELINUX := true
-TW_MAX_BRIGHTNESS := 255
-TW_INCLUDE_CRYPTO := true
-TW_HAS_DOWNLOAD_MODE := true
-TW_NO_REBOOT_BOOTLOADER := true
-TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/platform/s5p-tmu/temperature"
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/n7000/BoardConfigVendor.mk
