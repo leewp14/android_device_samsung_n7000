@@ -141,4 +141,8 @@
 
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">29</integer>
+
+    <!-- Enable button brightness -->
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+
 </resources>
