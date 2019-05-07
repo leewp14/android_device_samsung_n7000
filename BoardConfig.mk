@@ -21,9 +21,6 @@
 
 TARGET_BOARD_INFO_FILE := device/samsung/n7000/board-info.txt
 
-# Device specific headers
-TARGET_SPECIFIC_HEADER_PATH += device/samsung/n7000/include
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/n7000/bluetooth
 
