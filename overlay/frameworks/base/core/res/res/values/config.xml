@@ -141,4 +141,12 @@
 
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">29</integer>
+
+    <!-- Values for GPS configuration -->
+    <string-array translatable="false" name="config_gpsParameters">
+        <item>XTRA_SERVER_1=http://gllto.glpals.com/7day/glo/v2/latest/lto2.dat</item>
+        <item>XTRA_SERVER_2=http://gllto.glpals.com/4day/glo/v2/latest/lto2.dat</item>
+        <item>XTRA_SERVER_3=http://gllto.glpals.com/2day/glo/v2/latest/lto2.dat</item>
+    </string-array>
+
 </resources>

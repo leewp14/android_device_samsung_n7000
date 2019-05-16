@@ -1,0 +1,30 @@
+# init.target.rc
+
+on post-fs-data
+# GPS init
+    mkdir /data/gps
+    chown gps system /data/gps
+    chmod 771 /data/gps
+    write /sys/class/sec/gps/GPS_PWR_EN/export 162
+    write /sys/class/sec/gps/GPS_PWR_EN/value 0
+    write /sys/class/sec/gps/GPS_PWR_EN/direction out
+    chown gps system /sys/class/sec/gps/GPS_PWR_EN/value
+    chmod 0664 /sys/class/sec/gps/GPS_PWR_EN/value
+    chown gps system /dev/ttySAC1
+    chmod 0660 /dev/ttySAC1
+
+    restorecon /sys/class/sec/gps/export
+    restorecon /sys/class/sec/gps/GPS_PWR_EN/value
+    restorecon /sys/class/sec/gps/GPS_PWR_EN/direction
+
+    write /data/.cid.info 0
+    restorecon /data/.cid.info
+    restorecon /data/ISP_CV
+
+# GPS daemon
+service gpsd /system/bin/gpsd -c /system/etc/gps.xml
+    class late_start
+    socket gps seqpacket 0660 gps system
+    user gps
+    group system inet wakelock sdcard_rw gps
+
