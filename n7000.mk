@@ -22,6 +22,11 @@ LOCAL_PATH := device/samsung/n7000
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Bootanimation
+TARGET_SCREEN_HEIGHT :=1280
+TARGET_SCREEN_WIDTH := 800
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # This device is xhdpi.
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi

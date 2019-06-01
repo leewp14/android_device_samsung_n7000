@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_n7000.mk
+    $(LOCAL_DIR)/potato_n7000.mk

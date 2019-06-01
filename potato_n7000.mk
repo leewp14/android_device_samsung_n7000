@@ -17,28 +17,28 @@
 # Release name
 PRODUCT_RELEASE_NAME := GT-N7000
 
-# Bootanimation
-TARGET_SCREEN_HEIGHT :=1280
-TARGET_SCREEN_WIDTH := 800
-TARGET_BOOTANIMATION_HALF_RES := true
-
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# Inherit from those products. Most specific first.
+# Inherit common telephony configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit device configuration.
+# Inherit device configuration
 $(call inherit-product, device/samsung/n7000/n7000.mk)
+
+# Inherit from Potato vendor
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n7000
-PRODUCT_NAME := lineage_n7000
+PRODUCT_NAME := potato_n7000
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := GT-N7000
 
-#Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-N7000 TARGET_DEVICE=GT-N7000
-BUILD_FINGERPRINT=samsung/GT-N7000/GT-N7000:4.0.3/IML74K/ZCLP6:user/release-keys
-PRIVATE_BUILD_DESC="GT-N7000-user 4.0.3 IML74K ZCLP6 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=GT-N7000 \
+    TARGET_DEVICE=GT-N7000 \
+    PRIVATE_BUILD_DESC="GT-N7000-user 4.0.3 IML74K ZCLP6 release-keys"
+
+BUILD_FINGERPRINT := samsung/GT-N7000/GT-N7000:4.0.3/IML74K/ZCLP6:user/release-keys
+
+# Potato Recipe
+SOUNDPICKER_10 := true
