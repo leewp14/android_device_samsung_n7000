@@ -38,6 +38,22 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     sensors.exynos4
 
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
+    gps.smdk4x12
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/glgps:system/vendor/bin/glgps \
+    $(LOCAL_PATH)/gps/gps.cer:system/bin/gps.cer \
+    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/gps.xml:system/vendor/etc/gps.xml \
+    $(LOCAL_PATH)/gps/gps.exynos4.vendor.so:system/vendor/lib/hw/gps.exynos4.vendor.so
+
+# Rootdir
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
