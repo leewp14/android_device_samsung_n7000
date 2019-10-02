@@ -22,10 +22,10 @@ on post-fs-data
 
 on boot
 # Start GPS daemon
-service gps-daemon /vendor/bin/glgps
-    class main
-    socket gps seqpacket 0660 gps system
-    user gps
-    group system inet sdcard_rw gps
-    seclabel u:r:glgps:s0
+    service gps-daemon /vendor/bin/glgps
+        class main
+        socket gps seqpacket 0660 gps system
+        user gps
+        group system inet sdcard_rw gps
+        seclabel u:r:glgps:s0
 
