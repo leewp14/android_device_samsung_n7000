@@ -1,4 +1,5 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2015 The Android Open Source Project
+# Written by Dmitry Grinberg
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,19 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 LOCAL_PATH := $(call my-dir)
+
 
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := gps.c
-
-LOCAL_SHARED_LIBRARIES := \
-	libcutils \
-	liblog
-
-LOCAL_MODULE := gps.smdk4x12
-LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_VENDOR_MODULE := true
-
+LOCAL_SHARED_LIBRARIES := liblog libcutils libgui libbinder libutils libsensor
+LOCAL_SRC_FILES := libdmitry.c
+LOCAL_MODULE := libdmitry
+LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
-

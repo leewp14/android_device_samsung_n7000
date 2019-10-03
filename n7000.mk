@@ -39,18 +39,17 @@ PRODUCT_PACKAGES += \
     sensors.exynos4
 
 # GPS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0 \
-    android.hardware.gnss@1.0-impl \
-    android.hardware.gnss@1.0-service \
-    gps.smdk4x12
-
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/glgps:system/vendor/bin/glgps \
+    $(LOCAL_PATH)/gps/gpsd:system/bin/gpsd \
     $(LOCAL_PATH)/gps/gps.cer:system/bin/gps.cer \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/gps/gps.xml:system/vendor/etc/gps.xml \
-    $(LOCAL_PATH)/gps/gps.exynos4.vendor.so:system/vendor/lib/hw/gps.exynos4.vendor.so
+    $(LOCAL_PATH)/gps/gps.xml:system/etc/gps.xml \
+    $(LOCAL_PATH)/gps/gps.manta.so:system/vendor/lib/hw/gps.exynos4.vendor.so \
+
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
+    gps.exynos4 \
+    libdmitry
 
 # Rootdir
 PRODUCT_COPY_FILES += \
