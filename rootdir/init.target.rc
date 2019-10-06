@@ -1,7 +1,7 @@
 # init.target.rc
 
 on post-fs-data
-# GPS init
+    # GPS init
     mkdir /data/gps
     chown gps system /data/gps
     chmod 771 /data/gps
