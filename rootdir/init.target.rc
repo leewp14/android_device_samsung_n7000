@@ -21,6 +21,10 @@ on post-fs-data
     restorecon /data/.cid.info
     restorecon /data/ISP_CV
 
+on boot
+    # Reset MAX17041 Fuel Gauge
+    write /sys/devices/platform/i2c-gpio.9/i2c-9/9-0036/power_supply/fuelgauge/fg_reset_soc 1
+
 # GPS daemon
 service gpsd /system/bin/gpsd -c /system/etc/gps.xml
     class late_start
