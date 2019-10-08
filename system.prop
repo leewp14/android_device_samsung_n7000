@@ -10,4 +10,6 @@ ro.ril.telephony.nstrings=4
 # EGL blobs crash on screen off
 ro.egl.destroy_after_detach=true
 
+# MAX17041 Fuel Gauge Reset
+ro.max17041.fg_reset_soc=0
 
