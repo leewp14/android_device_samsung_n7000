@@ -22,7 +22,7 @@ on post-fs-data
     restorecon /data/ISP_CV
 
 # MAX17041 Fuel Gauge Reset
-on property:ro.max17041.fg_reset_soc=1
+on boot && property:ro.max17041.fg_reset_soc=1
     write /sys/devices/platform/i2c-gpio.9/i2c-9/9-0036/power_supply/fuelgauge/fg_reset_soc 1
 
 # GPS daemon
