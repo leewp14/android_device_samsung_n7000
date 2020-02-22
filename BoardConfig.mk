@@ -31,5 +31,8 @@ TARGET_KERNEL_CONFIG := lineageos_n7000_defconfig
 # assert
 TARGET_OTA_ASSERT_DEVICE := galaxynote,n7000,N7000,GT-N7000
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2013-01-24
+
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/n7000/BoardConfigVendor.mk
