@@ -41,8 +41,6 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gpsd:system/bin/gpsd \
-    $(LOCAL_PATH)/gps/gps.cer:system/bin/gps.cer \
-    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/gps/gps.xml:system/etc/gps.xml \
     $(LOCAL_PATH)/gps/gps.manta.so:system/vendor/lib/hw/gps.exynos4.vendor.so \
 
