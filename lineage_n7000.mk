@@ -40,11 +40,7 @@ PRODUCT_MODEL := GT-N7000
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-# Set build fingerprint / ID / Prduct Name ect.
+#Set build fingerprint / ID / Prduct Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-N7000 TARGET_DEVICE=GT-N7000
 BUILD_FINGERPRINT=samsung/GT-N7000/GT-N7000:4.0.3/IML74K/ZCLP6:user/release-keys
 PRIVATE_BUILD_DESC="GT-N7000-user 4.0.3 IML74K ZCLP6 release-keys"
-
-# Vendor security patch level
-PRODUCT_PROPERTY_OVERRIDES += ro.lineage.build.vendor_security_patch=2013-01-24
-
