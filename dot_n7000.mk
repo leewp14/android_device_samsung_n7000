@@ -18,12 +18,10 @@
 PRODUCT_RELEASE_NAME := GT-N7000
 
 # Bootanimation
-TARGET_SCREEN_HEIGHT :=1280
-TARGET_SCREEN_WIDTH := 800
-TARGET_BOOTANIMATION_HALF_RES := true
+TARGET_BOOT_ANIMATION_RES := 720
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Dot stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -33,7 +31,7 @@ $(call inherit-product, device/samsung/n7000/n7000.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n7000
-PRODUCT_NAME := lineage_n7000
+PRODUCT_NAME := dot_n7000
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := GT-N7000
