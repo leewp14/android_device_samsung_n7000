@@ -13,3 +13,6 @@ ro.egl.destroy_after_detach=true
 # MAX17041 Fuel Gauge Reset
 ro.max17041.fg_reset_soc=0
 
+# SELinux
+sys.selinux_enabled=true
+sys.selinux_enforcing=true
