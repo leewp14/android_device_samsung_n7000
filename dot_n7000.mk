@@ -26,6 +26,9 @@ $(call inherit-product, vendor/dot/config/common.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Get some sounds
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage14.mk)
+
 # Inherit device configuration.
 $(call inherit-product, device/samsung/n7000/n7000.mk)
 
