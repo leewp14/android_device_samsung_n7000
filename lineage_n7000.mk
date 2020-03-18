@@ -20,7 +20,6 @@ PRODUCT_RELEASE_NAME := GT-N7000
 # Bootanimation
 TARGET_SCREEN_HEIGHT :=1280
 TARGET_SCREEN_WIDTH := 800
-TARGET_BOOTANIMATION_HALF_RES := true
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
