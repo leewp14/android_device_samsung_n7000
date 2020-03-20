@@ -113,7 +113,7 @@ static const struct sensor_t sSensorList[] = {
           "STMicroelectronics",
           1, SENSORS_SIGNIFICANT_MOTION_HANDLE,
           SENSOR_TYPE_SIGNIFICANT_MOTION, 1.0f, 1.0f, 0.23f, 0, 0, 0,
-          "", "", 0, SENSOR_FLAG_WAKE_UP, {0, 0},},
+          "", "", 0, SENSOR_FLAG_WAKE_UP | SENSOR_FLAG_ONE_SHOT_MODE, {0, 0},},
 };
 
 
