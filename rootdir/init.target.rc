@@ -21,6 +21,10 @@ on post-fs-data
 on boot && property:ro.max17041.fg_reset_soc=1
     write /sys/devices/platform/i2c-gpio.9/i2c-9/9-0036/power_supply/fuelgauge/fg_reset_soc 1
 
+# Flash Counter Reset Compatibility
+on boot && property:ro.mmc.mmcblk0boot0.force_ro=0
+    write /sys/block/mmcblk0boot0/force_ro 0
+
 # GPS daemon
 service gpsd /system/bin/gpsd -c /system/etc/gps.xml
     class late_start

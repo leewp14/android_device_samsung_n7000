@@ -13,6 +13,9 @@ ro.egl.destroy_after_detach=true
 # MAX17041 Fuel Gauge Reset
 ro.max17041.fg_reset_soc=0
 
+# Flash Counter Reset Compatibility
+ro.mmc.mmcblk0boot0.force_ro=1
+
 # SELinux
 sys.selinux_enabled=true
 sys.selinux_enforcing=true
