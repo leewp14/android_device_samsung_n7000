@@ -172,6 +172,7 @@
     <!-- Values for GPS configuration -->
     <string-array translatable="false" name="config_gpsParameters">
         <item>NTP_SERVER=pool.ntp.org</item>
+	<item>XTRA_SERVER_1=http://gllto.glpals.com/7day/glo/v2/latest/lto2.dat</item>
     </string-array>
 
 </resources>
