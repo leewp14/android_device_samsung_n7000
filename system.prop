@@ -15,3 +15,16 @@ ro.max17041.fg_reset_soc=0
 
 # Flash Counter Reset Compatibility
 ro.mmc.mmcblk0boot0.force_ro=1
+
+# HWUI Parameters
+ro.hwui.texture_cache_size=48.0
+ro.hwui.layer_cache_size=32.0
+ro.hwui.gradient_cache_size=0.8
+ro.hwui.path_cache_size=24.0
+ro.hwui.shape_cache_size=3.0
+ro.hwui.drop_shadow_cache_size=4.0
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=512
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=1024
+ro.hwui.texture_cache_flushrate=0.6
