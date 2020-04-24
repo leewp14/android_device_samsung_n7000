@@ -26,7 +26,11 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/n7000/bluetooth
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
+ifeq ($(WITH_RAMDISK),true)
 TARGET_KERNEL_CONFIG := lineageos_n7000_defconfig
+else
+TARGET_KERNEL_CONFIG := lineageos_n7000_noramdisk_defconfig
+endif
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := galaxynote,n7000,N7000,GT-N7000
